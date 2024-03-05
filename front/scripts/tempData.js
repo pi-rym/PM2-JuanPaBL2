@@ -29,6 +29,16 @@ const tempData = [
     poster:
       "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
   },
+  {
+    title: "Peaky Blinders",
+    year: 2013,
+    director: "Steven Knight",
+    temporadas: "6",
+    genre: ["Action", "Adventure", "Drama", "crimen", "policial"],
+    rate: 8.8,
+    poster:
+      "https://m.media-amazon.com/images/M/MV5BZjYzZDgzMmYtYjY5Zi00YTk1LThhMDYtNjFlNzM4MTZhYzgyXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_.jpg",
+  }
 ];
 
 //SELECCIONAR TARJETA UNO
@@ -88,6 +98,9 @@ imgt111.src = tempData[2].poster;
 
 const span444 = document.getElementById('spant4-2')
 span444.innerText = tempData[2].genre;
+
+
+
 
 
 

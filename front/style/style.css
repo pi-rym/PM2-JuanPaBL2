@@ -130,3 +130,63 @@ main h1 span{
     font-size: 14px;
 }
 
+.tarjeta-series {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.tarjeta-series:hover {
+    transform: translateY(-5px);
+}
+
+#content-t{
+    list-style-type: none; /*desactivo viñetas de la lista de tarjetas*/
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    
+
+}
+
+/*asdasd*/
+
+.contenedor-tarjeta-b {
+    background-color: rgba(255, 255, 255, 0.5); /* Establece un color de fondo con una opacidad del 50% */
+    border: 1px solid black; /* Añade un borde para visualizar el contenedor */
+    width: 300px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .imagen-tarjeta {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .informacion {
+    text-align: center;
+  }
+
+  .titulo {
+    color: black; /* Ajusta el color del título */
+  }
+
+  .detalles {
+    font-size: 14px;
+    color: black; /* Ajusta el color del texto de los detalles */
+  }
+
+#contentt{
+    background-image: url('https://i.blogs.es/ccecab/blade-runner-2049-critica-espinof/1366_2000.jpeg');
+    padding-top: 2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
