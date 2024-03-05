@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style/style.css">
+      <title>rPylot</title>
   </head>
   <body>
-    <h1>Proyecto de M2</h1>
+        <!--SECCION 1: BARRA SUPERIOR TEXTO CORREDIZO-->
+        <div id="contienePa">
+          <header>
+            <span class="barra-promocion"> 1 mes de suscripcion <span id="gratis">gratis</span></span> <span class="barra-promocion"> 1 mes de suscripcion <span id="gratis">gratis</span></span> <span class="barra-promocion"> 1 mes de suscripcion <span id="gratis">gratis</span></span>
+          </header>
+        </div>
 
-    <script src="./scripts/tempData.js"></script>
-    <script src="./scripts/index.js"></script>
+      <!--SECCION 2: TITULO PAGINA, BARRA DE NAVEGACION Y MAS-->
+      <main class="contenedor-h1-barraNav">
+        <H1><span>r</span>Pylot</H1>
+          <div>
+              <ul class="barra-navegacion">
+                  <li class="li">INICIO</li>
+                  <a href="http://127.0.0.1:5500/PM2-JuanPaBL2/front/series.html"><li class="li">SERIES</li></a>
+                  <li class="li">PELICULAS</li>
+              </ul>
+          </div>
+      </main>
+
+      <!--SECCION 3: TARJETAS CON PELICULAS-->
+      <div id="contenedor-tarjetas">
+          <ul class="lista-tarjetas">
+
+              <!--TARJETA 1-->
+              <li class="tarjeta">
+                <div class="contenedor-tarjeta">
+                  <img src="" class="imagen-tarjeta" id="imgt1">
+                  <div class="informacion">
+                    <h2 class="titulo" id="tarjeta-uno"></h2>
+                    <section class="detalles">
+                      <span><b>Año:</b></span><span id="spant1"></span><br>
+                      <span><b>Director:</b></span><span id="spant2"></span><br>
+                      <span><b>Duración:</b></span><span id="spant3"></span><br>
+                      <span><b>Género:</b></span><span id="spant4"></span>
+                    </section>
+                  </div>
+                </div>
+              </li>
+
+              <!--TARJETA 2-->
+              <li class="tarjeta">
+                <div class="contenedor-tarjeta">
+                  <img src="" class="imagen-tarjeta" id="imgt1-1">
+                  <div class="informacion">
+                    <h2 class="titulo" id="tarjeta-dos"></h2>
+                    <section class="detalles">
+                      <span><b>Año:</b></span><span id="spant1-1"></span><br>
+                      <span><b>Director:</b></span><span id="spant2-1"></span><br>
+                      <span><b>Duración:</b></span><span id="spant3-1"></span><br>
+                      <span><b>Género:</b></span><span id="spant4-1"></span>
+                    </section>
+                  </div>
+                </div>
+              </li>
+
+                
+               <!--TARJETA 3-->
+              <li class="tarjeta">
+                <div class="contenedor-tarjeta">
+                  <img src="" class="imagen-tarjeta" id="imgt2-1">
+                  <div class="informacion">
+                    <h2 class="titulo" id="tarjeta-tres"></h2>
+                    <section class="detalles">
+                      <span><b>Año:</b></span><span id="spant1-2"></span><br>
+                      <span><b>Director:</b></span><span id="spant2-2"></span><br>
+                      <span><b>Duración:</b></span><span id="spant3-2"></span><br>
+                      <span><b>Género:</b></span><span id="spant4-2"></span>
+                    </section>
+                  </div>
+                </div>
+              </li> 
+      
+          </ul>
+      </div>
+      <!--SECCION FINAL-->
+      <footer></footer>
+
+      <script src="./scripts/tempData.js"></script>
+      <script src="./scripts/index.js"></script>
+
   </body>
 </html>
