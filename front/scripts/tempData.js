@@ -29,80 +29,40 @@ const tempData = [
     poster:
       "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
   },
-  {
-    title: "Peaky Blinders",
-    year: 2013,
-    director: "Steven Knight",
-    temporadas: "6",
-    genre: ["Action", "Adventure", "Drama", "crimen", "policial"],
-    rate: 8.8,
-    poster:
-      "https://m.media-amazon.com/images/M/MV5BZjYzZDgzMmYtYjY5Zi00YTk1LThhMDYtNjFlNzM4MTZhYzgyXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_.jpg",
-  }
 ];
 
-//SELECCIONAR TARJETA UNO
-const tarjetaUno = document.getElementById('tarjeta-uno');
-tarjetaUno.innerHTML = tempData[0].title;
+//CREA TARJETA PARA CADA ELEMENTO DE tempData.
+function crearTarjetas() {
+  const contenedorTarjetas = document.createElement('div');
+  contenedorTarjetas.classList.add('contenedorG-tarjetas-best'); // Cambia esta clase según corresponda
 
-const span1 = document.getElementById('spant1')
-span1.innerText = tempData[0].year
+  tempData.forEach(pelicula => {
+    const tarjeta = document.createElement('li');
+    tarjeta.classList.add('tarjeta-best'); // Cambia esta clase según corresponda
 
-const span2 = document.getElementById('spant2')
-span2.innerText = tempData[0].director;
+    tarjeta.innerHTML = `
+      <div class="contenedor-tarjeta">
+        <img src="${pelicula.poster}" class="imagen-tarjeta" id="imgt1">
+        <div class="informacion">
+          <h2 class="titulo" id="tarjeta-uno">${pelicula.title}</h2>
+          <section class="detalles">
+            <span><b>Año:</b></span><span id="spant1">${pelicula.year}</span><br>
+            <span><b>Director:</b></span><span id="spant2">${pelicula.director}</span><br>
+            <span><b>Duración:</b></span><span id="spant3">${pelicula.duration}</span><br>
+            <span><b>Género:</b></span><span id="spant4">${pelicula.genre.join(', ')}</span>
+          </section>
+        </div>
+      </div>
+    `;
 
-const span3 = document.getElementById('spant3')
-span3.innerText = tempData[0].duration;
+    contenedorTarjetas.appendChild(tarjeta);
+  });
 
-const imgt1 = document.getElementById('imgt1');
-imgt1.src = tempData[0].poster;
+  const contenedorPrincipal = document.getElementById('lista-tarjetas');
+  contenedorPrincipal.appendChild(contenedorTarjetas);
+}
 
-const span4 = document.getElementById('spant4')
-span4.innerText = tempData[0].genre;
-
-
-//SELECCIONAR TARJETA DOS
-const tarjetaDos = document.getElementById('tarjeta-dos');
-tarjetaDos.innerHTML = tempData[1].title;
-
-const span11 = document.getElementById('spant1-1')
-span11.innerText = tempData[1].year
-
-const span22 = document.getElementById('spant2-1')
-span22.innerText = tempData[1].director;
-
-const span33 = document.getElementById('spant3-1')
-span33.innerText = tempData[1].duration;
-
-const imgt11 = document.getElementById('imgt1-1');
-imgt11.src = tempData[1].poster;
-
-const span44 = document.getElementById('spant4-1')
-span44.innerText = tempData[1].genre;
-
-//SELECCIONAR TARJETA TRES
-const tarjetaTres = document.getElementById('tarjeta-tres');
-tarjetaTres.innerHTML = tempData[2].title;
-
-const span111 = document.getElementById('spant1-2')
-span111.innerText = tempData[2].year
-
-const span222 = document.getElementById('spant2-2')
-span222.innerText = tempData[2].director;
-
-const span333 = document.getElementById('spant3-2')
-span333.innerText = tempData[2].duration;
-
-const imgt111 = document.getElementById('imgt2-1');
-imgt111.src = tempData[2].poster;
-
-const span444 = document.getElementById('spant4-2')
-span444.innerText = tempData[2].genre;
-
-
-
-
-
+crearTarjetas();
 
 
 

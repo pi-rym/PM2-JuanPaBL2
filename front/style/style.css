@@ -78,110 +78,114 @@ main h1 span{
 }
 
 /*________________SECCION 3________________*/
-
-#contenedor-tarjetas{
-    padding-top: 1px;
-    height: 1px;
-}
-
-.lista-tarjetas{
-    list-style-type: none; /*desactivo viñetas de la lista de tarjetas*/
+/*best*/
+.contenedorG-tarjetas-best {
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
-    font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-/*TARJETAS PELICULAS*/
-.tarjeta {
+    flex-wrap: wrap;
+  }
+  
+  .tarjeta-best {
     width: 300px;
+    margin-bottom: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-}
+  }
   
-.tarjeta:hover {
+  .tarjeta-best:hover {
     transform: translateY(-5px);
-}
+  }
   
-.contenedor-tarjeta {
-  padding: 15px;
-}
+  .tarjeta-best .contenedor-tarjeta {
+    padding: 15px;
+  }
   
-.imagen-tarjeta {
+  .tarjeta-best .imagen-tarjeta {
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
+  }
   
-.informacion {
+  .tarjeta-best .informacion {
     margin-top: 10px;
-}
+  }
   
-.titulo {
+  .tarjeta-best .titulo {
     font-size: 20px;
     margin-bottom: 10px;
-}
+  }
   
-.detalles span {
+  .tarjeta-best .detalles span {
     display: block;
     margin-bottom: 5px;
     font-size: 14px;
-}
-
-.tarjeta-series {
+  }
+  
+  /*series*/
+  .contenedorG-tarjetas-series {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .tarjeta-series {
     width: 300px;
+    margin-top: 10px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    margin-top: 10px;
-}
-
-.tarjeta-series:hover {
-    transform: translateY(-5px);
-}
-
-#content-t{
-    list-style-type: none; /*desactivo viñetas de la lista de tarjetas*/
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    
-
-}
-
-/*asdasd*/
-
-.contenedor-tarjeta-b {
-    background-color: rgba(255, 255, 255, 0.5); /* Establece un color de fondo con una opacidad del 50% */
-    border: 1px solid black; /* Añade un borde para visualizar el contenedor */
-    width: 300px;
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
+  
+  .tarjeta-series:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tarjeta-series .contenedor-tarjeta {
+    padding: 15px;
+  }
+  
+  .tarjeta-series .imagen-tarjeta {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .tarjeta-series .informacion {
+    margin-top: 10px;
+  }
+  
+  .tarjeta-series .titulo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .tarjeta-series .detalles span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
 
-  .imagen-tarjeta {
+.imagen-tarjeta {
     max-width: 100%;
     height: auto;
-  }
+}
 
-  .informacion {
+.informacion {
     text-align: center;
-  }
+}
 
-  .titulo {
+.titulo {
     color: black; /* Ajusta el color del título */
-  }
+}
 
-  .detalles {
+.detalles {
     font-size: 14px;
     color: black; /* Ajusta el color del texto de los detalles */
-  }
+}
 
 #contentt{
     background-image: url('https://i.blogs.es/ccecab/blade-runner-2049-critica-espinof/1366_2000.jpeg');
@@ -189,4 +193,86 @@ main h1 span{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+footer{
+    position: fixed; /*--> PARa fijar algo*/
+    bottom: 0;
+    font-size: small;
+}
+
+.contenedor-tarjeta-b {
+    width: 300px;
+    margin: 0 auto; /* Para centrar horizontalmente */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo transparente */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contenedor-tarjeta-b:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contenedor-tarjeta-b .imagen-tarjeta {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .contenedor-tarjeta-b .informacion {
+    padding: 15px;
+  }
+  
+  .contenedor-tarjeta-b .titulo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contenedor-tarjeta-b .detalles span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .tarjeta-series {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo transparente */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.tarjeta-series:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-series .contenedor-tarjeta {
+  padding: 15px;
+}
+
+.tarjeta-series .imagen-tarjeta {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tarjeta-series .informacion {
+  margin-top: 10px;
+}
+
+.tarjeta-series .titulo {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.tarjeta-series .detalles span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/*/
 
