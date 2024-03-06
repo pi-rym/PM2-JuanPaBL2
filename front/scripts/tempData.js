@@ -31,12 +31,14 @@ const tempData = [
   },
 ];
 
+
+
 //CREA TARJETA PARA CADA ELEMENTO DE tempData.
-function crearTarjetas() {
+function crearTarjetas(data) {
   const contenedorTarjetas = document.createElement('div');
   contenedorTarjetas.classList.add('contenedorG-tarjetas-best'); // Cambia esta clase según corresponda
 
-  tempData.forEach(pelicula => {
+  data.forEach(pelicula => {
     const tarjeta = document.createElement('li');
     tarjeta.classList.add('tarjeta-best'); // Cambia esta clase según corresponda
 
@@ -62,7 +64,10 @@ function crearTarjetas() {
   contenedorPrincipal.appendChild(contenedorTarjetas);
 }
 
-crearTarjetas();
+//EJECUTO LA FUNCION CREARTARJETAS CON LA DATA OBTENIDA CON EL GET A LA API.
+$.get('https://students-api.2.us-1.fl0.io/movies', data => {
+  crearTarjetas(data)
+});
 
 
 
