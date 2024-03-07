@@ -45,6 +45,7 @@ header {
     
 }
 
+
 /*TITULO H1*/
 main h1{
     font-size: 25px;
@@ -78,7 +79,58 @@ main h1 span{
 }
 
 /*________________SECCION 3________________*/
-/*best*/
+
+/*____________BEST____________*/
+.contenedor-tarjeta-b {
+  width: 300px;
+  margin: 0 auto; /* Para centrar horizontalmente */
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo transparente */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.imagen-tarjeta {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.informacion {
+  text-align: center;
+}
+
+
+.titulo {
+  color: black; /* Ajusta el color del título */
+}
+
+
+.detalles {
+  font-size: 14px;
+  color: black; /* Ajusta el color del texto de los detalles */
+}
+
+
+#contentt{
+  background-image: url('https://i.blogs.es/ccecab/blade-runner-2049-critica-espinof/1366_2000.jpeg');
+  padding-top: 2px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*____________PELICULAS____________*/
+#contenedor-tarjetas{
+  background-color: black;
+  padding-bottom: 1px;
+}
+
+#lista-tarjetas{
+  padding-top: 30px;
+}
+
 .contenedorG-tarjetas-best {
     display: flex;
     justify-content: space-around;
@@ -122,157 +174,61 @@ main h1 span{
     margin-bottom: 5px;
     font-size: 14px;
   }
+
+footer{
+  font-size: smaller;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
   
-  /*series*/
+/*______________SERIES____________*/
   .contenedorG-tarjetas-series {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
+}
   
-  .tarjeta-series {
+.tarjeta-series {
     width: 300px;
     margin-top: 10px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .tarjeta-series:hover {
-    transform: translateY(-5px);
-  }
-  
-  .tarjeta-series .contenedor-tarjeta {
-    padding: 15px;
-  }
-  
-  .tarjeta-series .imagen-tarjeta {
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  
-  .tarjeta-series .informacion {
-    margin-top: 10px;
-  }
-  
-  .tarjeta-series .titulo {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .tarjeta-series .detalles span {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-  }
-  
-
-.imagen-tarjeta {
-    max-width: 100%;
-    height: auto;
 }
-
-.informacion {
-    text-align: center;
-}
-
-.titulo {
-    color: black; /* Ajusta el color del título */
-}
-
-.detalles {
-    font-size: 14px;
-    color: black; /* Ajusta el color del texto de los detalles */
-}
-
-#contentt{
-    background-image: url('https://i.blogs.es/ccecab/blade-runner-2049-critica-espinof/1366_2000.jpeg');
-    padding-top: 2px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-footer{
-    position: fixed; /*--> PARa fijar algo*/
-    bottom: 0;
-    font-size: small;
-}
-
-.contenedor-tarjeta-b {
-    width: 300px;
-    margin: 0 auto; /* Para centrar horizontalmente */
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo transparente */
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
   
-  .contenedor-tarjeta-b:hover {
-    transform: translateY(-5px);
-  }
-  
-  .contenedor-tarjeta-b .imagen-tarjeta {
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  
-  .contenedor-tarjeta-b .informacion {
-    padding: 15px;
-  }
-  
-  .contenedor-tarjeta-b .titulo {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .contenedor-tarjeta-b .detalles span {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-  }
-
-  .tarjeta-series {
-  width: 300px;
-  background-color: rgba(255, 255, 255, 0.7); /* Fondo transparente */
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  margin-top: 10px;
-}
-
 .tarjeta-series:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+  
+
+.tarjeta-series .informacion {
+    margin-top: 10px;
+}
+  
+.tarjeta-series .titulo {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+  
+.tarjeta-series .detalles span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
 }
 
-.tarjeta-series .contenedor-tarjeta {
-  padding: 15px;
+.content-t{
+  background-color: black;
 }
 
-.tarjeta-series .imagen-tarjeta {
+.contenedor-tarjeta-b:hover {
+    transform: translateY(-5px);
+}
+  
+.contenedor-tarjeta-b .imagen-tarjeta {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
-.tarjeta-series .informacion {
-  margin-top: 10px;
-}
-
-.tarjeta-series .titulo {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.tarjeta-series .detalles span {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-
-/*/
+  
 

@@ -1,4 +1,4 @@
-const tempData = [
+/*const tempData = [
   {
     title: "Guardians of the Galaxy Vol. 2",
     year: 2017,
@@ -29,9 +29,7 @@ const tempData = [
     poster:
       "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
   },
-];
-
-
+];*/
 
 //CREA TARJETA PARA CADA ELEMENTO DE tempData.
 function crearTarjetas(data) {
@@ -64,10 +62,8 @@ function crearTarjetas(data) {
   contenedorPrincipal.appendChild(contenedorTarjetas);
 }
 
-//EJECUTO LA FUNCION CREARTARJETAS CON LA DATA OBTENIDA CON EL GET A LA API.
-$.get('https://students-api.2.us-1.fl0.io/movies', data => {
-  crearTarjetas(data)
-});
+//EJECUTO LA FUNCION crearTarjetas CON LA DATA OBTENIDA CON EL GET A LA API.
+$.get('https://students-api.2.us-1.fl0.io/movies', data => crearTarjetas(data));
 
 
 
