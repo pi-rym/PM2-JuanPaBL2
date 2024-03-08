@@ -28,11 +28,6 @@ function crearTarjetas(data) {
     const contenedorPrincipal = document.getElementById('lista-tarjetas');
     contenedorPrincipal.appendChild(contenedorTarjetas);
   }
-  
-  
-  
-  //EJECUTO LA FUNCION crearTarjetas CON LA DATA OBTENIDA CON EL GET A LA API.
-  $.get('https://students-api.2.us-1.fl0.io/movies', data => crearTarjetas(data));
-  
-  
+
+module.exports = crearTarjetas;
   
