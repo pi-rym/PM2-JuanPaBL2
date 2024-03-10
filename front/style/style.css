@@ -133,10 +133,7 @@ main h1 span{
     font-size: 14px;
   }
 
-footer{
-  font-size: smaller;
-  background-color: rgba(0, 0, 0, 0.1);
-}
+
 
 /*____________BEST (Mejor pelicula)____________*/
 .contenedor-tarjeta-b {
@@ -148,6 +145,7 @@ footer{
   transition: transform 0.3s ease-in-out;
   margin-top: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
   
 }
 
@@ -164,6 +162,8 @@ footer{
 
 .titulo {
   color: black; /* Ajusta el color del título */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 30px;
 }
 
 
