@@ -14,3 +14,5 @@ class CarritoCompra{
         return descuentoAplicado;
     }
 }
+
+module.exports = CarritoCompra;
