@@ -1,20 +1,18 @@
 const crearTarjetas = require('./index')
 
-//EJECUTO LA FUNCION crearTarjetas CON LA DATA OBTENIDA CON EL GET A LA API.
-$.get('https://students-api.2.us-1.fl0.io/movies', data => crearTarjetas(data));
 
-/*const axios = require('axios')
+const axios = require('axios')
 
-const solicitarMovies = async () =>{
-    //SI LA SOLICITUD TIENE EXITO
-    try{
-        //guardare un objeto con los datos de la api en la variable.
-        const dataMovie = await axios.get()
-    }
-    catch (error){
-        const blokTarjetas = document.querySelectorAll('.contenedorG-tarjetas-best').sty
-        
+const solicitarMovies = async () => {
+    try {
+        const response = await axios.get('https://students-api.up.railway.app/movies');
+        const dataMovie = response.data;
+        crearTarjetas(dataMovie); // Llama directamente a la función con los datos obtenidos
+    } catch (error) {
+        const blokTarjetas = document.getElementById('contenedor-tarjetas');
+        blokTarjetas.style.display = 'none';
+        alert(error);
     }
 }
 
-//si hago algun cambio, debo hacer npm run build*/
+solicitarMovies();
