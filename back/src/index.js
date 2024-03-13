@@ -1,7 +1,10 @@
 //import el servidor
-const app = require('./services/server')
+const app = require('./services/server');
+const router = require('./routers/router');
 
-//Levanto el servidor
-app.listen(3000, () => {
-    console.log(`servidor escuchando en el puerto ${3000}`);
+app.use(router);
+
+const port = 3000;
+app.listen(port, () => {
+    console.log(`Servidor escuchando en el puerto ${port}`);
 });
