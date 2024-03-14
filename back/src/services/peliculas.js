@@ -1,9 +1,8 @@
 class Movie {
     constructor(title, year, director, duration, genre, rate, poster) {
         if (!title || !poster || !director) {
-            throw new Error('Los campos title, poster y director son obligatorios');
+            throw new Error('Faltan completar datos.');
         }
-
         this.title = title;
         this.year = year;
         this.director = director;
@@ -14,6 +13,7 @@ class Movie {
     }
 }
 
+//creo objeto con los datos extraidos de la api usada en front, lo almaceno en la instancia de movie que reemplazara dichos datos en las parametros del constructor para usarlos en las propiedades.
 const arrayObjetsMovies = [
     new Movie("Guardians of the Galaxy Vol. 2", 2017, "James Gunn", "2h 16min", ["Action", "Adventure", "Comedy"], 7.7, "https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg"),
     new Movie("Star Wars: Episode IV - A New Hope", 1977, "George Lucas", "2h 1min", ["Action", "Adventure", "Fantasy", "Sci-Fi"], 8.7, "https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg"),
