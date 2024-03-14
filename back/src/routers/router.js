@@ -1,6 +1,6 @@
 //CREAR ENRUTADOR
 const { Router } = require('express');
-const {controlador} = require("../controllers/controlador")
+const {controlador} = require("../controllers/controlador");
 
 const router = Router();
 
