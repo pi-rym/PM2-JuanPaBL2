@@ -11,7 +11,7 @@ const app = express();
 //aplico middlewares a las solicitudes del servidor
 app.use(morgan('dev'))
 app.use(cors())
-app.use(express.json())
+app.use(express.json()) 
 
 //Importo el enrutador
 const router = require('../routers/router')

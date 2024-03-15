@@ -24,3 +24,5 @@ module.exports = {
     Movie,
     returnMovies: () => arrayObjetsMovies
 };
+
+//la validacion la usa en el modulo servicio 
