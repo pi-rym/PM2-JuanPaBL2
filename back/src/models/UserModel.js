@@ -16,6 +16,6 @@ const productoSchema = new Schema({
 
 //___IMPLEMENTAR MODELO CON SCHEMA___
 
-const UserModel = model("UserModel", productoSchema);
+const Movie = model("Movie", productoSchema);
 
-module.exports = UserModel;
+module.exports = Movie;
