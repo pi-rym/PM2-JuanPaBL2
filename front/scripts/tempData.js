@@ -1,4 +1,6 @@
 const crearTarjetas = require('./index')
+const { limpiarForm, validarForm } = require('./form');
+
 
 const axios = require('axios')
 

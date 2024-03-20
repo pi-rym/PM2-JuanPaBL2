@@ -3,7 +3,6 @@ const Movie = require('../models/UserModel')
 
 const returnMovies = async () => {
     try {
-        // Usamos Mongoose para obtener las películas desde la base de datos
         const movies = await Movie.find();
         return movies;
     } catch (error) {

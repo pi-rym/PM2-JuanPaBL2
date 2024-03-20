@@ -1,11 +1,11 @@
 //CREA TARJETA PARA CADA ELEMENTO DE tempData.
 function crearTarjetas(data) {
     const contenedorTarjetas = document.createElement('div');
-    contenedorTarjetas.classList.add('contenedorG-tarjetas-best'); // Cambia esta clase según corresponda
+    contenedorTarjetas.classList.add('contenedorG-tarjetas-best'); 
   
     data.forEach(pelicula => {
       const tarjeta = document.createElement('li');
-      tarjeta.classList.add('tarjeta-best'); // Cambia esta clase según corresponda
+      tarjeta.classList.add('tarjeta-best'); 
   
       tarjeta.innerHTML = `
         <div class="contenedor-tarjeta">
@@ -27,7 +27,8 @@ function crearTarjetas(data) {
   
     const contenedorPrincipal = document.getElementById('lista-tarjetas');
     contenedorPrincipal.appendChild(contenedorTarjetas);
-  }
+}
+
 
 module.exports = crearTarjetas;
   
