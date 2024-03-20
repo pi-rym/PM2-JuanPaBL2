@@ -1,8 +1,16 @@
-const crearTarjetas = require('./index')
-const { limpiarForm, validarForm } = require('./form');
+const crearTarjetas = require('./index');
+const {validarForm, limpiarForm} = require("./form")
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Aquí colocas tu código JavaScript
+    const botonLimpieza = document.getElementById('boton-limpiar');
+    botonLimpieza.addEventListener("click", limpiarForm);
+  
+    const formulario = document.getElementById('boton-enviar');
+    formulario.addEventListener("click", validarForm);
+});
 
-const axios = require('axios')
+const axios = require('axios');
 
 const solicitarMovies = async () => {
     try {
