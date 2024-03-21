@@ -8,11 +8,10 @@ const productoSchema = new Schema({
     year: String,
     director: String,
     duration: String,
-    genre:[{ type: String }],
+    genre: Array,
     rate: Number,
     poster: String,
 });
-
 
 //___IMPLEMENTAR MODELO CON SCHEMA___
 

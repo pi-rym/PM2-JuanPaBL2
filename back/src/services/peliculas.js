@@ -1,6 +1,5 @@
 const Movie = require('../models/UserModel')
 
-
 const returnMovies = async () => {
     try {
         const movies = await Movie.find();
@@ -11,7 +10,13 @@ const returnMovies = async () => {
     }
 };
 
+//____________________________________________
+const moviesFormService = async (data) => {
+        const dataForm = await Movie.create(data);
+        return dataForm;
+};
+        
 module.exports = {
-    returnMovies: returnMovies
+    returnMovies: returnMovies, moviesFormService: moviesFormService
 };
 //la validacion la usa en el modulo servicio 

@@ -192,45 +192,35 @@ main h1 span{
 }
   
 /*____________FORMULARIO MOVIES____________*/
-#section{
-  background-image: url('../img/jack-reacher-star-wars-interstellar-movie-john-wick-wallpaper-preview.jpg');
-  background-size: cover; /* La imagen de fondo se ajusta automáticamente al tamaño del contenedor */
-  bottom: 0;
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-
-#formulario-movies{
-  display: flexbox;
-  justify-content: space-around;
-  margin: 40px;
-}
-
-
-#contenedor-h1-form{
-  background-color: gray;
+#contenedor-forMovies{
   display:block;
+  padding-top: 20px;
+  margin-top: 0px;
+  background-image: url('../img/jack-reacher-star-wars-interstellar-movie-john-wick-wallpaper-preview.jpg');
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
-  
-#titulo-form{
+
+#h11{
+  text-align: center;
+  font-size: 23px;
+  color: white;
   font-family: "Plus Jakarta Sans", sans-serif;
-  padding: 15px;
+  padding: 10px;
 }
 
-#contenedor-form{
-  border: 2px solid black;
-  background-color: white;
-  margin: 50px;
-  transition: transform 0.3s ease-in-out; /* Agrega una transición suave al movimiento */
+#formularioS{
+  margin: 20px;
+  padding: 20px;
+  border: px solid;
+  text-align: center;
+  
 }
 
-#contenedor-form:hover {
-  transform: translate(5px, -5px); /* Mueve el formulario hacia la derecha y hacia arriba al pasar el cursor */
+#ulf{
+  border-radius: 5%;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  display:inline-block;
 }
-
-#fotardo{
-  position: fixed; /*--> PARa fijar algo*/
-  bottom: 0; /*-->especifica distancia del borde inferior y un elemento*/
-  padding-top: 1px;
-}
-

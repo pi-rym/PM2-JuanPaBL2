@@ -1,9 +1,9 @@
  
 module.exports = {
-    entry: "./scripts/tempData.js",
+    entry: "./scripts/form.js",
     
     output: {
         path: __dirname + "/public",
-        filename: "bundle.js",
+        filename: "form.js",
     },
 };
