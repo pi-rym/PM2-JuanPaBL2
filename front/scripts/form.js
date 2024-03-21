@@ -13,6 +13,7 @@ function validarForm(){
         alert('Por favor completa todos los campos.')
         return;
     }
+    //valido que la longitud del value del input year sea un numero de 4 digitos.
     if (year.length !== 4 || isNaN(year)) {
        alert('Por favor, ingrese un año válido de 4 dígitos.');
        return;
@@ -39,6 +40,7 @@ function validarForm(){
     return dataPost;
 }
 
+//LIMPIA EL FORMULARIO
 function cleanForm(){
      
      document.getElementById('titulo').value = '';
@@ -54,15 +56,17 @@ function cleanForm(){
      });
 }
 
+    //EVENT LISTENER BOTON LIMPIAR
     const botonLimpieza = document.getElementById('botonLimpiar');
     botonLimpieza?.addEventListener("click", cleanForm);
   
+    //EVENT LISTENER BOTON ENVIAR
     const botonEnviar = document.getElementById('botonEnviar');
-    //event handler del boton enviar fomulario
+    //SOLICITUD POST CON DATA OBTENIDA LUEGO DE VALIDAR
     botonEnviar?.addEventListener("click", async () =>{
         try {
-           const datos = validarForm(); // Almacena el objeto retornado por validarForm en la variable 'datos'
-           await axios.post('http://localhost:3000/movies', datos); // Utiliza 'datos' en la solicitud POST
+           const datos = validarForm(); 
+           await axios.post('http://localhost:3000/movies', datos); 
        } catch (error) {
            alert(error.message);
        }
