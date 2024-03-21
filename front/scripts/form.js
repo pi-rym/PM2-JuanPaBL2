@@ -18,7 +18,7 @@ function validarForm(){
        return;
     }
 
-   //Obtener los géneros
+   //Obtenego los géneros
    const generosSeleccionados = [];
 
    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -39,24 +39,21 @@ function validarForm(){
     return dataPost;
 }
 
-
 function cleanForm(){
-     // Establecer los valores de los inputs en cadena vacía o en su estado predeterminado
+     
      document.getElementById('titulo').value = '';
      document.getElementById('director').value = '';
      document.getElementById('duracion').value = '';
      document.getElementById('rate').value = '';
      document.getElementById('poster').value = '';
      document.getElementById('año').value = '';
-     // Desmarcar todos los checkboxes
+     
      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
      checkboxes.forEach(function(checkbox) {
          checkbox.checked = false;
      });
 }
 
-
-    // Aquí colocas tu código JavaScript
     const botonLimpieza = document.getElementById('botonLimpiar');
     botonLimpieza?.addEventListener("click", cleanForm);
   
