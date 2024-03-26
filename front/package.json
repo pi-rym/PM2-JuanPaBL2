@@ -2,7 +2,7 @@
   "name": "front",
   "version": "1.0.0",
   "description": "",
-  "main": "tempData.js",
+  "main": "form.js",
   "scripts": {
     "start": "live-server",
     "build": "webpack"

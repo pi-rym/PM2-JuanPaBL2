@@ -1,6 +1,7 @@
 //creo el controlador (middleware) que manejara la solicitud
 const peliculas = require('../services/peliculas')
 
+
 //CONTROLADOR PARA GET
 const controlador = async (req, res) => { 
     try{
@@ -9,7 +10,6 @@ const controlador = async (req, res) => {
     } catch (error){
         res.status(500).send(error.message);
     }
-    // Enviar el arreglo de películas como respuesta al cliente  
 }
 
 //CONTROLADOR PARA POST

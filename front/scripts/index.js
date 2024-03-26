@@ -17,6 +17,7 @@ function crearTarjetas(data) {
             <span><b>Director:</b></span><span id="spant2">${pelicula.director}</span><br>
             <span><b>Duración:</b></span><span id="spant3">${pelicula.duration}</span><br>
             <span><b>Género:</b></span><span id="spant4">${pelicula.genre.join(', ')}</span>
+            <span><b>Puntuacion:</b></span><span id="spant5">${pelicula.rate}</span>
           </section>
         </div>
       </div>

@@ -11,8 +11,8 @@
     <body>
         <!--SECCION BARRA NAVEGACION-->
         <main class="contenedor-h1-barraNav">
-            <H1><span>r</span>Pylot</H1>
-                <div>
+            <H1 id="h1-formu"><span>r</span>Pylot</H1>
+                <div id="contenedor-formularios">
                     <ul class="barra-navegacion">
                         <li class="li">FORMULARIO</li>
                         <a href="http://127.0.0.1:5500/PM2-JuanPaBL2/front/index.html"><li class="li">PELICULAS</li></a>
@@ -23,7 +23,7 @@
         </main>
 
     
-        <form onsubmit="validarForm(event)">
+        <form class="pb-0 " onsubmit="validarForm(event)">
             <div id="contenedor-forMovies">
                 <div id="formularioS">
                     <ul id="ulf" class="text-center m-0 p-0 text-white">
@@ -66,7 +66,7 @@
                         </li>
                         <li>
                             <br><label>rate</label><br>
-                            <input id="rate" placeholder="introduzca el puntaje">
+                            <input id="rate" placeholder="introduzca el puntaje" type="number">
                         </li>
                         <li>
                             <br><label>poster</label><br>
@@ -75,17 +75,18 @@
 
                         <div class="text-center pb-4 mt-5">
                             <button id="botonEnviar" class="btn btn-secondary mt-2" type="submit">Enviar</button> 
-                            <button id="botonLimpiar" class="btn btn-secondary mt-2" type="reset">Limpiar</button> 
+                            <button id="botonLimpiar" class="btn btn-secondary mt-2" >Limpiar</button> 
                         </div> 
                     </ul>
                 </div>
             </div>
         </form>
         
-        <footer  class="h6 small text-white pt-1 pb-1 m-0 bg-dark">
+        <footer  class="h6 small text-white pb-2 bg-dark">
             &copy; Todos los derechos reservados.
         </footer>
         <script src="./public/form.js"></script>
+
         <!--IMPORTO Boostrap-->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

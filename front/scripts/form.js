@@ -1,5 +1,7 @@
 const axios = require('axios');
 
+
+//EVENT HANDLER SEND FORM
 function validarForm(){
     const title = document.getElementById('titulo').value;
     const director = document.getElementById('director').value;
@@ -18,7 +20,7 @@ function validarForm(){
        alert('Por favor, ingrese un año válido de 4 dígitos.');
        return;
     }
-
+    
    //Obtenego los géneros
    const generosSeleccionados = [];
 
@@ -36,13 +38,12 @@ function validarForm(){
    }
 
     //insertar los datos obtenidos del formulario en un objeto
-    const dataPost = {title, director, duration, rate, poster, year, genre: generosSeleccionados};
+    const dataPost = {title, director, duration, rate, poster, year, genre: generosSeleccionados}; //los nombres de las propiedades deben ser igual a las del esquema moongose del lado del servidor.
     return dataPost;
 }
 
-//LIMPIA EL FORMULARIO
+//EVENT HANDLER CLEAN FORM
 function cleanForm(){
-     
      document.getElementById('titulo').value = '';
      document.getElementById('director').value = '';
      document.getElementById('duracion').value = '';
@@ -54,20 +55,23 @@ function cleanForm(){
      checkboxes.forEach(function(checkbox) {
          checkbox.checked = false;
      });
+    
 }
 
-    //EVENT LISTENER BOTON LIMPIAR
-    const botonLimpieza = document.getElementById('botonLimpiar');
-    botonLimpieza?.addEventListener("click", cleanForm);
+//EVENT LISTENER CLEAN FORM
+const botonLimpieza = document.getElementById('botonLimpiar');
+botonLimpieza?.addEventListener("click", cleanForm);
   
-    //EVENT LISTENER BOTON ENVIAR
-    const botonEnviar = document.getElementById('botonEnviar');
-    //SOLICITUD POST CON DATA OBTENIDA LUEGO DE VALIDAR
-    botonEnviar?.addEventListener("click", async () =>{
-        try {
-           const datos = validarForm(); 
-           await axios.post('http://localhost:3000/movies', datos); 
-       } catch (error) {
-           alert(error.message);
-       }
-   });
+//EVENT LISTENER SEND FORM
+const botonEnviar = document.getElementById('botonEnviar');
+
+//SOLICITUD POST CON DATA OBTENIDA LUEGO DE VALIDAR
+botonEnviar?.addEventListener("click", async () =>{
+    try {
+        const datos = validarForm(); 
+        await axios.post('http://localhost:3000/movies', datos); 
+    } catch (error) {
+        alert(error.message);
+    }
+});
+

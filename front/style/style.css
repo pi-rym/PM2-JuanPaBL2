@@ -197,7 +197,7 @@ main h1 span{
   padding-top: 20px;
   margin-top: 0px;
   background-image: url('../img/jack-reacher-star-wars-interstellar-movie-john-wick-wallpaper-preview.jpg');
-  padding-bottom: 0px;
+  padding-bottom: 4px;
   margin-bottom: 0px;
 }
 
@@ -223,4 +223,8 @@ main h1 span{
   padding: 0px;
   background-color: black;
   display:inline-block;
+}
+
+#h1-formu{
+  padding-left: 50px;
 }
